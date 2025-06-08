@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var t = gsap.timeline()
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
-    console.log(screenWidth);
+    gsap.registerPlugin(SplitText);
 
     t.from(".packet-1", {
         y: -1000,
